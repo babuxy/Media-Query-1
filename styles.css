@@ -1,0 +1,119 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active1 {
+  float: left;
+  background-color: purple;
+  width: 300px;
+}
+
+.active {
+  float: right;
+  margin-right: 100px;
+}
+
+.grid-container {
+  display: grid;
+  padding: 30px 10px;
+  height: 70%;
+  grid-template-columns: 40% 60%;
+}
+
+.grid-container > img {
+  padding: 30px 20px;
+  margin-left: 100px;
+  width: 200px;
+  border-radius: 50%;
+  height: 30vh;
+}
+
+.grid-container > div {
+  display: grid;
+  grid-template-rows: 70px 70px 70px;
+  background-color: rgba(255, 255, 255, 0.8);
+  gap: 5px;
+  padding: 30px 0;
+}
+
+.box1 {
+  height: 40px;
+  border-style: solid black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: white;
+  margin-left: 100px;
+  margin-right: 20px;
+  width: 70%;
+  background-color: purple;
+}
+
+.box3 {
+  height: 40px;
+  border-style: solid black;
+  grid-row: 2;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: white;
+  margin-left: 100px;
+  margin-right: 20px;
+  width: 70%;
+  background-color: purple;
+}
+
+.box4 {
+  height: 40px;
+  border-style: solid black;
+  grid-row: 3;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: white;
+  margin-left: 100px;
+  margin-right: 20px;
+  width: 70%;
+  background-color: purple;
+}
+
+.footer-container {
+  margin-top: 0px;
+  height: 100px;
+  border-style: solid black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  background-color: purple;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.end-container {
+  height: 75px;
+  border-style: solid black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  background-color: purple;
+  color: white;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
